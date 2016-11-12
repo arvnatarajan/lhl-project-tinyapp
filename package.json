@@ -9,13 +9,9 @@
     "ejs": "^2.5.2",
     "express": "^4.14.0",
     "method-override": "^2.3.6",
-    "mongodb": "^2.2.10"
+    "mongodb": "^2.2.11"
   },
   "devDependencies": {},
-  "scripts": {
-    "start": "node express_server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
