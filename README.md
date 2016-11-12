@@ -10,7 +10,9 @@ This is one of the projects I completed during a two-month web development bootc
 The app allows you to shorten a long URL to a randomly generated 6-character string.
 
 Technologies used:
-  * Javascript
+  * Node.js
+  * Express
   * MongoDB
+  * Heroku
 
 Completed in Week 2 of our 8-week bootcamp, this was our first real project built from scratch. Super exciting when I finally got it to work!
