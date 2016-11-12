@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <header>
+    <% include ../partials/header %>
+  </header>
+
+  <main>
+    <p>If you would like to create a new short URL, click on the button below</p>
+    <form method="GET" action="/urls/new">
+      <button type="submit">Create New URL</button>
+    </form>
+    <br>
+    <h3>List of shortened URLs</h3>
+    <ul>
+      <% urlDatabase.forEach((element) => { %>
+        <table>
+          <tr>
+            <td width="300px" height="30px">
+              <li><%= `${element.shortURL}: ${element.longURL}` %></li>
+            </td>
+            <td width="60px" height="30px">
+              <a href="<%= `/urls/${element.shortURL}` %>">Edit</a>
+            </td>
+            <td width="60px" height="30px">
+              <form method="POST" action="<%= `/urls/${element.shortURL}?_method=DELETE` %>">
+                <button type="submit">Delete</button>
+              </form>
+            </td>
+          </tr>
+        </table>
+      <% }); %>
+    </ul>
+  </main>
+
+</body>
+</html>

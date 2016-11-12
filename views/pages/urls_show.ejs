@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <header>
+    <% include ../partials/header %>
+  </header>
+  <main>
+    <p>Your short URL is: <a href="/u/<%= shortURL %>"><%= shortURL %>.</a> Click on it to be redirected to the actual website.</p>
+    <br>
+    <form method="POST" action="<%= `/urls/${shortURL}?_method=PUT` %>">
+      <label for="longURL">Your current long URL is: </label>
+      <input id="longURL" type="text" name="longURL" placeholder="<%= longURL %>" style="width: 300px">
+      <input type="submit" value="Update">
+    </form>
+  </main>
+
+
+</body>
+</html>

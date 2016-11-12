@@ -1,0 +1,36 @@
+{
+  "name": "lhl-project-tinyapp",
+  "version": "1.0.0",
+  "description": "A URL shortener, similar to bit.ly. It allows you to conveniently shorten complex URLs ",
+  "main": "express_server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "mongodb": "^2.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node express_server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvnatarajan/lhl-project-tinyapp.git"
+  },
+  "keywords": [
+    "URL",
+    "tinyapp"
+  ],
+  "author": "arvnatarajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvnatarajan/lhl-project-tinyapp/issues"
+  },
+  "homepage": "https://github.com/arvnatarajan/lhl-project-tinyapp#readme"
+}
