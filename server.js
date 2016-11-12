@@ -25,14 +25,12 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   }
 
   console.log('Connected to database!');
+  console.log('Retrieving documents for the "urls" collection...');
 
   let collection = db.collection('urls');
 
-  console.log('Retrieving documents for the "urls" collection...');
-
   app.use('', routes(collection)); // mount all routes
 });
-
 
 // listens for port
 app.listen(PORT, () => {
