@@ -1,6 +1,6 @@
 # PROJECT - TINYAPP
 
-URL shortner, similar to bit.ly and TinyURL. See a working example at: https://thawing-sands-60691.herokuapp.com/
+URL shortner, similar to bit.ly and TinyURL. See a [working example](https://thawing-sands-60691.herokuapp.com/) deployed on Heroku.
 
 Use `npm start` to run the application
 
