@@ -12,9 +12,10 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const routes = require('./routes/routes.js') // get routes from file
 
-app.use(bodyParser.urlencoded());     // allows access to POST request parameters
-app.use(methodOverride ('_method'));  // allows access to methodOverride in Express
-app.set('view engine', 'ejs');        // set the view engine to ejs
+app.use(bodyParser.urlencoded());                 // allows access to POST request parameters
+app.use(methodOverride ('_method'));              // allows access to methodOverride in Express
+app.set('view engine', 'ejs');                    // set the view engine to ejs
+app.use(express.static(__dirname + '/assets'));   // load the assets folder
 
 console.log(`Connecting to MongoDB running at: ${MONGODB_URI}`);
 

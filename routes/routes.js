@@ -1,6 +1,6 @@
 const express     = require('express');
 const router      = express.Router();
-const generateRandomString = require('../js/generate-random-string.js');
+const generateRandomString = require('../assets/js/generate-random-string.js');
 
 module.exports = (collection) => {
   // index page
