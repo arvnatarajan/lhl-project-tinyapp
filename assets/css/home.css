@@ -1,7 +1,57 @@
 body {
   font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  background-color: #DCD0C0
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #373737;
+  padding: 25px 0;
 }
 
 .app-title {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #DCD0C0;
+  padding: 0 20px;
+}
+
+.navigations {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navigations li {
+  padding: 0 20px;
+  list-style: none;
+}
+
+.navigations li a {
+  color: #DCD0C0;
+}
+
+.navigations li a:visited {
+  color: #AB987A;
+}
+
+.new-url-message {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.new-url-form-link {
+  text-align: center;
+}
+
+button {
+  background-color: #373737;
+  color: #DCD0C0;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 3px;
 }
